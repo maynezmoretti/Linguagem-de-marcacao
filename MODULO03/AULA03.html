@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias HTML</title>
+</head>
+<body>
+    <h1>
+        Categorias de Conteúdo HTML5
+    </h1>
+    <h3>
+        Elementos de Bloco
+    </h3>
+    <p>
+        Ocupam toda a largura disponível, exemplo: &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;section&gt;, &lt;article&gt;
+        </p>
+        <h3>
+            Elementos de Linha
+        </h3>
+        <p>
+            Ocupam apenas o espaço necessário na linha, exemplo: &lt;a&gt;, &lt;span&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;img&gt;
+        </p>
+        <h4>
+            Regras Importantes
+        </h4>
+        <p>
+            Elementos de linha não devem conter elementos de bloco.
+        </p>
+        <h5>
+            Exemplo incorreto:
+        </h5>
+
+        <span><div>"Texto"</div></span>
+
+        <h5>
+            Exemplo correto:
+        </h5>
+
+        <div><span>"Texto"</span></div>
+
+        <h3>
+            Categorias de conteúdo:
+        </h3>
+        <h4>
+            - Metadata Content
+        </h4>
+        <p>
+            São informações de configuração do arquivo HTML.
+        </p>
+        <p> &lt;title&gt; // Informa o título da página </p>
+        <p> &lt;meta&gt; // Definir codificação </p>
+        <p> &lt;link&gt; e &lt;style&gt; // Importar/anexar CSS </p>
+        <P> &lt;script&gt; // Importar/anexar comandos JavaScript </P>
+        <h4>
+            - Flow Content
+        </h4>
+        <p>
+            Representa a maior parte dos elementos usados no &lt;body&gt;.
+        </p>
+        <p> &lt;div&gt; // Cria uma divisão genérica/agrupar "pedaços" de código </p>
+        <p> &lt;p&gt; // Cria parágrafo dentro da página </p>
+        <p> &lt;section&gt; // Agrupa conteúdos que partilham do mesmo assunto/ideia </p>
+        <p> &lt;article&gt; // Conteúdo independente e completo por si só (faz sentido sozinho) </p>
+        <p> &lt;img&gt; // Importa imagens, desenhos, fotos (não precisa de tag de fechamento) </p>
+        <p> &lt;form&gt; // Cria formulários (o usuário pode digitar dados e/ou enviar mensagens/fazer login) </p>
+        <h4>
+            - Sectioning Content
+        </h4>
+        <p>
+            Serve para organizar grandes áreas do documento.
+        </p>
+        <p> &lt;section&gt; // Agrupa conteúdos que partilham do mesmo assunto/ideia </p>
+        <p> &lt;article&gt; // Conteúdo independente e completo por si só (faz sentido sozinho) </p>
+        <p> &lt;aside&gt; // Serve para guardar um conteúdo secundário/lateral (links relacionados, anúncios, biografia, etc.) </p>
+        <p> &lt;nav&gt; // Agrupa links de navegação </p>
+        <h4>
+            - Heading Content
+        </h4>
+        <p> h1, h2, h3, h4, h5 e h6 // Adiciona títulos e subtítulos </p>
+        <p> &lt;hgroup&gt; // Agrupa elementos de título, exemplo:
+            <hgroup>
+                <h6> "HTML - LIMA </h6>
+                <h5> SENAI Americana" </h5>
+            </hgroup>
+        </p>
+        <h4>
+            - Phrasing Context
+        </h4>
+        <p> Elementos que marcam textos ou partes de texto. </p>
+        <p> &lt;span&gt; // Um bloco genérico (não muda nada sozinho), porém pode aplicar CSS ou chamar funções/comportamentos com JavaScript </p>
+        <p> &lt;a&gt; // Cria um link para direcionar o usuário para outra página, utilizando o atributo href. Exemplo:
+            <a href="https://www.youtube.com/" target="_blank"> Clique aqui para acessar o YouTube! </a>
+        </p>
+</body>
+</html>
