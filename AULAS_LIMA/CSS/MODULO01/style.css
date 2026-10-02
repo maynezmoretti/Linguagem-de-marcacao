@@ -1,0 +1,14 @@
+body {
+    background-color: plum;
+}
+
+h1 {
+    background-color: plum;
+    color: palevioletred;
+}
+p {
+    background-color: plum;
+    font-size: 14px;
+    color: palevioletred;
+    text-align: center;
+} 
