@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .cupom-gamer {
+            /* Delimitar a largura máxima */
+            width: 320px;
+            background-color: #fef9c3;
+            /* 20px cima/baixo e 30px direita/esquerda */
+            padding: 20px 30px;
+            /* A extremidade da box model */
+            border: 2px dashed #e4d00a;
+            /* A distância em relação às outras tags */
+            margin: 25px auto;
+        }
+        .btn-gamer {
+            /* Permite que o link aceite o padding e largura com segurança */
+            display: inline-block;
+            background-color: #e7945c;
+            color: white;
+            /* Retira o sublinhado do link */
+            text-decoration: none;
+            padding: 15px 25px;
+            /* Arredondar os cantos */
+            border-radius: 15px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+        }
+        .btn-gamer:hover {
+            /* Esmaecer o botão */
+            background-color: #8a5d3d;
+            /* Flutuar o botão 2px para baixo */
+            transform: translateY(-2px);
+        }
+        .btn-gamer:active {
+            transform: translateY(2px);
+        }
+        .btn-secundario {
+            cursor: pointer;
+            background: transparent;
+            color: #0ea5e9;
+            padding: 12px 24px;
+            border: 2px dotted #0ea5e9;
+            border-radius: 15px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+        }
+        .btn-secundario:hover {
+            border-style: solid;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <a href="" class="btn-gamer">Iniciar partida</a>
+    <button class="btn-secundario">Configurações</button>
+    <div class="cupom-gamer">
+        <h3>Cupom: DEV100</h3>
+        <p>Desconto liberado na loja!</p>
+    </div>
+</body>
+</html>
