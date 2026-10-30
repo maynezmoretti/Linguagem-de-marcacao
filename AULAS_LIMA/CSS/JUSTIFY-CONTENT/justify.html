@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        .navbar-gamer {
+            /* Ligando o flexbox no container */
+            display: flex;
+            background: #202e50;
+            /* Centraliza o elemento na vertical */
+            align-items: center;
+            padding: 10px 24px;
+            height: 50px;
+            /* Adiciona os elementos nas pontas */
+            justify-content: space-between;
+        }
+
+        .menu-links {
+            display: flex;
+            /* Criar espaço entre os elementos */
+            gap: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        div {
+            color: white;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .quadrado {
+            width: 1000px;
+            height: 700px;
+            background: #202e50;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quadrado h1 {
+            color: white;
+            text-align: center;
+        }
+        
+        .quadrado-menor {
+            width: 900px;
+            height: 600px;
+            background: #304575;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-gamer">
+        <div class="logo">DEV.GAMES</div>
+        <nav class="menu-links">
+            <a href="">Início</a>
+            <a href="">Catálogo</a>
+            <a href="">Perfil</a>
+        </nav>
+    </header>
+
+    <main>
+    <div class="quadrado">
+        <div class="quadrado-menor">
+            <h1>Bem-vindo ao DEV.GAMES!!!</h1>
+        </div>
+    </div>
+    </main>
+
+</body>
+</html>

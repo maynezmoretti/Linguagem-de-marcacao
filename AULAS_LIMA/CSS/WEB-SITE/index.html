@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A vida selvagem das Orcas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra fixa no topo: Botão mostrar / esconder explicações -->
+     <div class="barra-fixa">
+        <div>
+            <strong style="color: #00d2ff;"> Laboratório de CSS3: </strong>
+            <span style="font-size: 14px; color: #cbd5e1;">Veja a página funcionando e entenda o código de cada pedaço!</span>
+        </div>
+
+        <button id="btntoggle" class="btn-alternar-explicacoes" onclick="alternarExplicacoes()">
+            Mostrar / Esconder
+        </button>
+     </div>
+
+     <div class="container-pagina">
+        <!-- Componente 1: Cabeçalho (NAVBAR) -->
+         <header class="navbar">
+            <div class="logo">🐋 ORCA.WEB</div>
+            <nav class="menu-links">
+                <a href="#sonar">Sonar</a>
+                <a href="#habitos">Hábitos</a>
+                <a href="#baleal">Baleal</a>
+                <a href="#vscode">Código</a>
+            </nav>
+         </header>
+
+         <!-- Explicação do Componente 1 -->
+          <div class="explicacao-css">
+            <span class="tag-componente">Componente 1 - Flexbox no cabeçalho</span>
+            <h4>Como colocamos o logo na esquerda e os links na direita</h4>
+            <p>
+                <strong>Analogia da pratileira organizada:</strong> Quando colocamos <code>display: flex;</code> na barra do topo, todos os filhos entram na mesma linha. Depois, o comando <code>justify-content: space-between;</code> empurra o primeiro item (logo) para a ponta esquerda e o último item (links) para a ponta direita.
+            </p>
+          </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação Keyframe</title>
+
+    <style>
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            min-height: 100vh;
+        }
+
+        @keyframes six {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(20px);
+            }
+
+            /* Volta suavemente para o ponto inicial */
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .six {
+            margin: 10px;
+            width: 100px;
+            height: auto;
+            animation: six 2.5s ease-in-out infinite;
+        }
+
+        @keyframes seven {
+            0% {
+                transform: translateY(20px);
+            }
+
+            50% {
+                transform: translateY(0px);
+            }
+
+            /* Volta suavemente para o ponto inicial */
+            100% {
+                transform: translateY(20px);
+            }
+        }
+
+        .seven {
+            margin: 10px;
+            width: 100px;
+            height: auto;
+            animation: seven 2.5s ease-in-out infinite;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+    <div>
+        <img src="https://svgsilh.com/svg/33769.svg" alt="Six" class="six">
+    </div>
+
+    <div>
+        <img src="https://svgsilh.com/svg/33770.svg" alt="Seven" class="seven">
+    </div>
+</main>
+
+</body>
+</html>
